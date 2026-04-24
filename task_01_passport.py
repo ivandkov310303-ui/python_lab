@@ -11,3 +11,26 @@ floors = 24
 height = 78.4
 is_residential = True
 construction_year = 2025
+def main() -> None:
+    """Выводит паспорт строительного объекта в человеко-читаемом виде."""
+    building_type = "Жилой" if is_residential else "Нежилой"
+
+    print("=== ПАСПОРТ СТРОИТЕЛЬНОГО ОБЪЕКТА ===")
+    print(f"Составитель: {student_name}")
+    print(f"Группа: {group_number}")
+    print()
+    print(f"Объект: {project_name}")
+    print(f"Этажность: {floors} этажей")
+    print(f"Высота: {height:.1f} м")
+    print(f"Тип: {building_type}")
+    print(f"Год постройки: {construction_year}")
+
+if __name__ == "__main__":
+    main()
+
+# Где находится объект:
+# г. Санкт-Петербург, Приморский район
+
+# Почему выбран именно он:
+# В качестве примера взят современный жилой объект, потому что для него удобно
+# показать этажность, высоту и тип здания.
